@@ -25,7 +25,7 @@ const contactSchema = new Schema({
     timestamp: {
         type: String,
         // required: true,
-        default: moment().format('D MMM YYYY, h:mm:ss a')
+        default: moment.tz('Asia/Kolkata').format('D MMM YYYY, h:mm:ss a')
     }
 });
 
